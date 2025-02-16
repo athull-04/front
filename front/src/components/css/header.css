@@ -1,0 +1,126 @@
+/* General header styles */
+.header {
+  display: flex;
+  justify-content: space-between; /* Space out the logo and nav */
+  padding: 10px 20px;
+  background-color: #312d2d;
+  box-shadow: 0 2px 4px rgba(109, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo a {
+  text-decoration: none;
+  color: rgb(141, 247, 255);
+  padding-left: 5px;
+  font-family: "Sixtyfour Convergence", serif;
+  }
+  
+.logo a:hover {
+  color: #ffae00;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  padding-top: 7px;
+}
+
+.navbar li {
+  margin-left: 20px;
+}
+
+.navbar a {
+  text-decoration: none; /* Ensure no underline for links */
+  color: #ffffff;
+  font-family: "New Rocker", serif;
+  font-size: 15px;  /* Font size */
+  transition: color 0.3s ease;
+}
+
+/* Profile Icon and Text Alignment */
+.navbar li a {
+  display: flex;
+  align-items: center;
+}
+
+.material-icons {
+  font-size: 20px;
+  margin-right: 5px; /* Increase the gap between the icon and the text */
+}
+
+.profile-text {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.profile-text:hover {
+  color: #ffae00;
+}
+
+
+.navbar .active {
+  color: #ffae00;  /* Color for active link */
+}
+
+.navbar a:hover {
+  color: #f16101;  /* Color for hover effect */
+  font-size: 16px;
+}
+
+/* Right-aligned navigation but not fully right */
+.navbar {
+  margin-left: auto; /* Align to the right, but not fully */
+  margin-right: 20px; /* Add a little space from the right edge */
+}
+
+.search-bar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.search-bar input {
+  width: 60%;
+  padding: 8px 30px 8px 12px; /* Adjusted padding: space for icon */
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.search-icon {
+  position: absolute;
+  right: 280px; /* Adjust to ensure it's inside the input field */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* Prevents the icon from blocking input */
+}
+
+.search-icon svg {
+  fill: #666; /* Icon color */
+  width: 18px; /* Icon size */
+  height: 18px;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #66afe9;
+}
+
+.material-icons {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
