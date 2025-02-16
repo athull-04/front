@@ -17,7 +17,7 @@ const ProfilePage = () => {
     if (!refreshToken) return null;
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/refresh', { refreshToken });
+      const response = await axios.post('https://shop-budu.onrender.com/api/auth/refresh', { refreshToken });
       return response.data.accessToken; // Assuming the response contains a new access token
     } catch (err) {
       console.error('Error refreshing token:', err);
