@@ -88,7 +88,7 @@ const ProfilePage = () => {
       <div className="profile-page-container">
         <div className="sidebar">
           <div className="sidebar-header">
-            <img src={userInfo.profilePicture || "https://images.pexels.com/photos/14653174/pexels-photo-14653174.jpeg"} alt="User Profile" className="profile-picture" />
+            
             <h2>{userInfo.username}</h2>
           </div>
           <nav className="sidebar-nav">
