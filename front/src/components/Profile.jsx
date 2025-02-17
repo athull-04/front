@@ -106,8 +106,12 @@ const ProfilePage = () => {
             <h2>Your Information</h2>
             <div className="account-info">
               <h3>Account Details</h3>
-              <p>Email: {userInfo.username}</p>
-              <p>Username: {userInfo.username}</p>
+              <div className="account-info">
+  <h3>Account Details</h3>
+  <p>Email: {userInfo ? userInfo.email : 'Loading...'}</p>
+  <p>Username: {userInfo ? userInfo.username : 'Loading...'}</p>
+</div>
+
             </div>
           </section>
 
