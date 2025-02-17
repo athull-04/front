@@ -17,7 +17,7 @@ const ProfilePage = () => {
     if (!refreshToken) return null;
 
     try {
-      const response = await axios.post('https://shop-budu.onrender.com/api/auth/refresh', { refreshToken });
+      const response = await axios.post('https://bucolic-pony-093027.netlify.app/api/auth/refresh', { refreshToken });
       return response.data.accessToken; // Assuming the response contains a new access token
     } catch (err) {
       console.error('Error refreshing token:', err);
@@ -36,7 +36,7 @@ const ProfilePage = () => {
 
     const fetchUserData = async () => {
       try {
-        const response = await axios.get('https://shop-budu.onrender.com/api/auth/profile', {
+        const response = await axios.get('https://bucolic-pony-093027.netlify.app/api/auth/profile', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -141,6 +141,7 @@ const ProfilePage = () => {
               <div className="form-group">
                 <button type="submit" className="save-btn">Save Changes</button>
               </div>
+
             </form>
           </section>
           
