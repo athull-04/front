@@ -24,7 +24,7 @@ const Register = () => {
 
     try {
       // Updated backend API URL
-      const response = await axios.post("https://backaztee.onrender.com/api/auth/register/register", credentials, {
+      const response = await axios.post("https://backaztee.onrender.com/api/auth/register", credentials, {
         headers: {
           "Content-Type": "application/json",
         },
