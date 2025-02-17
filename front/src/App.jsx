@@ -22,7 +22,7 @@ function App() {
         <Route path="/admin-panel" element={<AdminPanel />} />
         <Route path="/products" element={<ProductList/>} />
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactUs />} />
