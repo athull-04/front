@@ -11,7 +11,7 @@ const UserLogin = () => {
 
     try {
       // Update the backend API URL to the new one
-      const response = await axios.post("https://bucolic-pony-093027.netlify.app/api/auth/user/login", credentials);
+      const response = await axios.post("https://backaztee.onrender.com/api/auth/user/login", credentials);
 
       const { token } = response.data;
 
