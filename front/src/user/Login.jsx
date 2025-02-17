@@ -10,7 +10,8 @@ const UserLogin = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("https://shop-budu.onrender.com/api/auth/user/login", credentials);
+      // Update the backend API URL to the new one
+      const response = await axios.post("https://bucolic-pony-093027.netlify.app/api/auth/user/login", credentials);
 
       const { token } = response.data;
 
