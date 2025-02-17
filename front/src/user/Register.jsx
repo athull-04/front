@@ -23,25 +23,23 @@ const Register = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("https://shop-budu.onrender.com/api/auth/register", credentials, {
+      // Updated backend API URL
+      const response = await axios.post("https://backaztee.onrender.com/api/auth/register", credentials, {
         headers: {
           "Content-Type": "application/json",
         },
       });
       console.log("User registered:", response.data);
       setSuccessMessage('User registered successfully!');
-      navigate("/login");
+      navigate("/login"); // Redirect to login page after successful registration
 
-      // Redirect or show success message
     } catch (error) {
       console.error("Registration error:", error);
       if (error.response && error.response.data.message === "Username already exists") {
         setError('The username is already taken. Please choose another one.');
-
-    }
-    else {
+      } else {
         setError('An error occurred while registering the user.');
-    }
+      }
     }
   };
 
