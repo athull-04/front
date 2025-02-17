@@ -5,7 +5,7 @@ import AdminLogin from "./admin/adminlogin";
 import ProductList from "./components/productList";
 import Home from "./components/Home";
 import Login from "./user/Login";
-import RegisterPage from "./user/Register";
+import Register from "./user/Register";
 import ProfilePage from "./components/Profile";
 import AboutPage from "./components/about";
 import ContactUs from "./components/contact";
