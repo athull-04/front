@@ -4,7 +4,7 @@ const API_URL = "https://shop-budu.onrender.com/api";
 
 export const getProducts = async () => {
   try {
-    const response = await axios.get("https://shop-budu.onrender.com/api/products");
+    const response = await axios.get("https://backaztee.onrender.com/api/products");
     return response.data;
   } catch (error) {
     console.error("Error fetching products:", error);
